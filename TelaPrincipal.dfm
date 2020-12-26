@@ -1,0 +1,555 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Align = alClient
+  BorderStyle = bsNone
+  Caption = 'Tela Principal'
+  ClientHeight = 655
+  ClientWidth = 774
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesigned
+  OnCreate = FormCreate
+  DesignSize = (
+    774
+    655)
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PnlBarraEsquerda: TPanel
+    Left = 0
+    Top = 0
+    Width = 195
+    Height = 655
+    Align = alLeft
+    BevelOuter = bvNone
+    Color = 2895406
+    DoubleBuffered = False
+    ParentBackground = False
+    ParentDoubleBuffered = False
+    TabOrder = 0
+    ExplicitHeight = 554
+    object PnlSair: TPanel
+      Left = 0
+      Top = 590
+      Width = 195
+      Height = 65
+      Align = alBottom
+      BevelOuter = bvNone
+      Color = 14120960
+      ParentBackground = False
+      TabOrder = 0
+      ExplicitTop = 489
+      object BtnSair: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 195
+        Height = 65
+        Align = alClient
+        Caption = 'Sair'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clHighlightText
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Font.Quality = fqAntialiased
+        ParentFont = False
+        OnClick = BtnSairClick
+        ExplicitLeft = 32
+        ExplicitWidth = 163
+      end
+    end
+    object PnlHome: TPanel
+      Left = 0
+      Top = 71
+      Width = 195
+      Height = 65
+      BevelOuter = bvNone
+      Color = 14120960
+      ParentBackground = False
+      TabOrder = 1
+      object BtnHome: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 195
+        Height = 65
+        Align = alClient
+        Caption = 'Home'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clHighlightText
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Font.Quality = fqAntialiased
+        ParentFont = False
+        OnClick = BtnHomeClick
+        ExplicitLeft = 17
+        ExplicitTop = 16
+      end
+    end
+    object PnlClientes: TPanel
+      Left = 0
+      Top = 142
+      Width = 195
+      Height = 65
+      BevelOuter = bvNone
+      Color = 14120960
+      ParentBackground = False
+      TabOrder = 2
+      object BtnClientes: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 195
+        Height = 65
+        Align = alClient
+        Caption = 'Clientes'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clHighlightText
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Font.Quality = fqAntialiased
+        ParentFont = False
+        OnClick = BtnClientesClick
+        ExplicitLeft = 32
+        ExplicitTop = 16
+      end
+    end
+    object PnlOrdens: TPanel
+      Left = 0
+      Top = 213
+      Width = 195
+      Height = 65
+      BevelOuter = bvNone
+      Color = 14120960
+      ParentBackground = False
+      TabOrder = 3
+      object BtnOrdens: TSpeedButton
+        Left = 0
+        Top = 0
+        Width = 195
+        Height = 65
+        Align = alClient
+        Caption = 'Ordens'
+        Flat = True
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clHighlightText
+        Font.Height = -21
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        Font.Quality = fqAntialiased
+        ParentFont = False
+        OnClick = BtnOrdensClick
+        ExplicitTop = 16
+      end
+    end
+  end
+  object PnlBarraTopo: TPanel
+    Left = 0
+    Top = 0
+    Width = 774
+    Height = 73
+    Anchors = [akLeft, akTop, akRight]
+    BevelOuter = bvNone
+    Color = 2895406
+    ParentBackground = False
+    TabOrder = 1
+    object LblLocal: TLabel
+      Left = 241
+      Top = 21
+      Width = 62
+      Height = 29
+      Caption = 'Home'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clHighlightText
+      Font.Height = -24
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      Font.Quality = fqAntialiased
+      ParentFont = False
+    end
+  end
+  object PnlLogo: TPanel
+    Left = 3
+    Top = 3
+    Width = 192
+    Height = 65
+    BevelOuter = bvNone
+    Color = clBlack
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clHighlightText
+    Font.Height = -13
+    Font.Name = 'Roboto'
+    Font.Style = [fsBold]
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 2
+    object LblLogo: TLabel
+      Left = 0
+      Top = 0
+      Width = 192
+      Height = 65
+      Align = alClient
+      Alignment = taCenter
+      Caption = 'Gestor Os'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clHighlightText
+      Font.Height = -24
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      Font.Quality = fqAntialiased
+      ParentFont = False
+      Layout = tlCenter
+      ExplicitWidth = 106
+      ExplicitHeight = 29
+    end
+  end
+  object PnlPrincipal: TPanel
+    Left = 195
+    Top = 73
+    Width = 579
+    Height = 582
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    BevelOuter = bvNone
+    Color = clBtnHighlight
+    ParentBackground = False
+    TabOrder = 3
+    ExplicitHeight = 481
+    object PgcPrincipal: TPageControl
+      Left = 0
+      Top = 0
+      Width = 579
+      Height = 582
+      ActivePage = TabClientes
+      Align = alClient
+      TabOrder = 0
+      ExplicitHeight = 481
+      object TabHome: TTabSheet
+        Caption = 'TabHome'
+        TabVisible = False
+        ExplicitHeight = 471
+        DesignSize = (
+          571
+          572)
+        object Label1: TLabel
+          Left = 528
+          Top = 557
+          Width = 31
+          Height = 13
+          Anchors = [akRight, akBottom]
+          Caption = 'Label1'
+          Color = clBlack
+          ParentColor = False
+          ExplicitTop = 456
+        end
+      end
+      object TabClientes: TTabSheet
+        Caption = 'TabClientes'
+        ImageIndex = 1
+        TabVisible = False
+        ExplicitHeight = 471
+        DesignSize = (
+          571
+          572)
+        object Label2: TLabel
+          Left = 536
+          Top = 557
+          Width = 31
+          Height = 13
+          Anchors = [akRight, akBottom]
+          Caption = 'Label2'
+          ExplicitTop = 456
+        end
+        object LblPesquisar: TLabel
+          Left = 3
+          Top = 9
+          Width = 89
+          Height = 25
+          Caption = 'Pesquisar'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -21
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+        end
+        object PnlCadastrar: TPanel
+          Left = 24
+          Top = 485
+          Width = 195
+          Height = 65
+          Anchors = [akLeft, akBottom]
+          BevelOuter = bvNone
+          Color = clBlack
+          ParentBackground = False
+          TabOrder = 0
+          ExplicitTop = 384
+          object BtnCadastrar: TSpeedButton
+            Left = 0
+            Top = 0
+            Width = 193
+            Height = 65
+            Caption = 'Cadastrar'
+            Flat = True
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clHighlightText
+            Font.Height = -24
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            Font.Quality = fqAntialiased
+            ParentFont = False
+            OnClick = BtnCadastrarClick
+          end
+        end
+        object GrdClientes: TDBGrid
+          Left = 2
+          Top = 40
+          Width = 567
+          Height = 439
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          DataSource = DM.dsCliente
+          TabOrder = 1
+          TitleFont.Charset = DEFAULT_CHARSET
+          TitleFont.Color = clWindowText
+          TitleFont.Height = -11
+          TitleFont.Name = 'Tahoma'
+          TitleFont.Style = []
+        end
+        object EdtPesquisar: TEdit
+          Left = 112
+          Top = 13
+          Width = 193
+          Height = 21
+          TabOrder = 2
+        end
+        object PnlExcluir: TPanel
+          Left = 240
+          Top = 485
+          Width = 195
+          Height = 65
+          Anchors = [akLeft, akBottom]
+          BevelOuter = bvNone
+          Caption = 'PnlExcluir'
+          Color = clBlack
+          ParentBackground = False
+          TabOrder = 3
+          ExplicitTop = 384
+          object BtnExcluir: TSpeedButton
+            Left = 0
+            Top = 0
+            Width = 195
+            Height = 65
+            Align = alClient
+            Caption = 'Excluir'
+            Flat = True
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clHighlightText
+            Font.Height = -24
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            ExplicitWidth = 193
+          end
+        end
+      end
+      object TabOrdens: TTabSheet
+        Caption = 'TabOrdens'
+        ImageIndex = 2
+        TabVisible = False
+        ExplicitHeight = 471
+        DesignSize = (
+          571
+          572)
+        object Label3: TLabel
+          Left = 528
+          Top = 547
+          Width = 31
+          Height = 13
+          Anchors = [akRight, akBottom]
+          Caption = 'Label3'
+          ExplicitTop = 446
+        end
+      end
+      object TabCadastrarCliente: TTabSheet
+        Caption = 'TabCadastrarCliente'
+        ImageIndex = 3
+        TabVisible = False
+        ExplicitHeight = 471
+        DesignSize = (
+          571
+          572)
+        object Label4: TLabel
+          Left = 528
+          Top = 559
+          Width = 31
+          Height = 13
+          Anchors = [akRight, akBottom]
+          Caption = 'Label4'
+          ExplicitTop = 440
+        end
+        object LblObservacoes: TLabel
+          Left = 15
+          Top = 271
+          Width = 102
+          Height = 19
+          Caption = 'Observa'#231#245'es'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -16
+          Font.Name = 'Tahoma'
+          Font.Style = [fsBold]
+          Font.Quality = fqAntialiased
+          ParentFont = False
+        end
+        object EdtInputName: TLabeledEdit
+          Left = 16
+          Top = 36
+          Width = 313
+          Height = 27
+          EditLabel.Width = 47
+          EditLabel.Height = 19
+          EditLabel.Caption = 'Nome'
+          EditLabel.Font.Charset = DEFAULT_CHARSET
+          EditLabel.Font.Color = clWindowText
+          EditLabel.Font.Height = -16
+          EditLabel.Font.Name = 'Tahoma'
+          EditLabel.Font.Style = [fsBold]
+          EditLabel.Font.Quality = fqAntialiased
+          EditLabel.ParentFont = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -16
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          Font.Quality = fqAntialiased
+          ParentFont = False
+          TabOrder = 0
+        end
+        object EdtCpfCnpj: TLabeledEdit
+          Left = 16
+          Top = 101
+          Width = 313
+          Height = 27
+          EditLabel.Width = 92
+          EditLabel.Height = 19
+          EditLabel.Caption = 'CPF / CNPJ'
+          EditLabel.Font.Charset = DEFAULT_CHARSET
+          EditLabel.Font.Color = clWindowText
+          EditLabel.Font.Height = -16
+          EditLabel.Font.Name = 'Tahoma'
+          EditLabel.Font.Style = [fsBold]
+          EditLabel.Font.Quality = fqAntialiased
+          EditLabel.ParentFont = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -16
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          Font.Quality = fqAntialiased
+          ParentFont = False
+          TabOrder = 1
+        end
+        object EdtEndereco: TLabeledEdit
+          Left = 16
+          Top = 164
+          Width = 313
+          Height = 27
+          EditLabel.Width = 75
+          EditLabel.Height = 19
+          EditLabel.Caption = 'Endere'#231'o'
+          EditLabel.Font.Charset = DEFAULT_CHARSET
+          EditLabel.Font.Color = clWindowText
+          EditLabel.Font.Height = -16
+          EditLabel.Font.Name = 'Tahoma'
+          EditLabel.Font.Style = [fsBold]
+          EditLabel.Font.Quality = fqAntialiased
+          EditLabel.ParentFont = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -16
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          Font.Quality = fqAntialiased
+          ParentFont = False
+          TabOrder = 2
+        end
+        object EdtTelefone: TLabeledEdit
+          Left = 16
+          Top = 228
+          Width = 313
+          Height = 27
+          EditLabel.Width = 72
+          EditLabel.Height = 19
+          EditLabel.Caption = 'Telefone'
+          EditLabel.Font.Charset = DEFAULT_CHARSET
+          EditLabel.Font.Color = clWindowText
+          EditLabel.Font.Height = -16
+          EditLabel.Font.Name = 'Tahoma'
+          EditLabel.Font.Style = [fsBold]
+          EditLabel.Font.Quality = fqAntialiased
+          EditLabel.ParentFont = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -16
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          Font.Quality = fqAntialiased
+          ParentFont = False
+          TabOrder = 3
+        end
+        object EdtObservacoes: TRichEdit
+          Left = 16
+          Top = 296
+          Width = 313
+          Height = 172
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -16
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ParentFont = False
+          TabOrder = 4
+          Zoom = 100
+        end
+        object PnlClienteSalvar: TPanel
+          Left = 16
+          Top = 504
+          Width = 195
+          Height = 65
+          Anchors = [akLeft, akBottom]
+          BevelOuter = bvNone
+          Color = clBlack
+          ParentBackground = False
+          TabOrder = 5
+          object BtnSalvarCliente: TSpeedButton
+            Left = 0
+            Top = 0
+            Width = 195
+            Height = 65
+            Align = alClient
+            Caption = 'Salvar'
+            Flat = True
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clHighlightText
+            Font.Height = -21
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            OnClick = BtnSalvarClienteClick
+            ExplicitLeft = 56
+            ExplicitTop = 24
+            ExplicitWidth = 23
+            ExplicitHeight = 22
+          end
+        end
+      end
+    end
+  end
+end

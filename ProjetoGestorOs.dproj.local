@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/12/20 23:58:04.000.663,=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/12/25 18:54:02.000.314,=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/12/25 21:05:30.000.756,C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\osgestor\TelaPrincipal.dfm</Transaction>
+    <Transaction>2020/12/25 21:05:30.000.756,C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\osgestor\TelaPrincipal.pas</Transaction>
+    <Transaction>2020/12/25 21:05:46.000.331,C:\Users\sidne\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\osgestor\ProjetoGestorOs.dproj</Transaction>
+    <Transaction>2020/12/26 12:19:46.144,=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\osgestor\Unit1.pas</Transaction>
+    <Transaction>2020/12/26 12:20:29.410,C:\Users\sidne\Documents\Embarcadero\Studio\Projects\osgestor\U_DM.pas=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\osgestor\Unit1.pas</Transaction>
+    <Transaction>2020/12/26 12:20:29.410,C:\Users\sidne\Documents\Embarcadero\Studio\Projects\osgestor\U_DM.dfm=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\osgestor\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

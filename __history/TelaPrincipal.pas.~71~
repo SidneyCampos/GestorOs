@@ -1,0 +1,96 @@
+unit TelaPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.pngimage, Vcl.Buttons, Vcl.ComCtrls, Data.DB, Vcl.Grids,
+  Vcl.DBGrids;
+
+type
+  TFrmPrincipal = class(TForm)
+    PnlBarraEsquerda: TPanel;
+    PnlBarraTopo: TPanel;
+    PnlLogo: TPanel;
+    LblLogo: TLabel;
+    BtnSair: TSpeedButton;
+    PnlSair: TPanel;
+    PnlHome: TPanel;
+    BtnHome: TSpeedButton;
+    PnlClientes: TPanel;
+    BtnClientes: TSpeedButton;
+    PnlOrdens: TPanel;
+    BtnOrdens: TSpeedButton;
+    LblLocal: TLabel;
+    PnlPrincipal: TPanel;
+    PgcPrincipal: TPageControl;
+    TabHome: TTabSheet;
+    TabClientes: TTabSheet;
+    TabOrdens: TTabSheet;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    TabCadastrarCliente: TTabSheet;
+    Label4: TLabel;
+    PnlCadastrar: TPanel;
+    GrdClientes: TDBGrid;
+    LblPesquisar: TLabel;
+    EdtPesquisar: TEdit;
+    BtnCadastrar: TSpeedButton;
+    PnlExcluir: TPanel;
+    BtnExcluir: TSpeedButton;
+    procedure BtnSairClick(Sender: TObject);
+    procedure BtnHomeClick(Sender: TObject);
+    procedure BtnClientesClick(Sender: TObject);
+    procedure BtnOrdensClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure BtnCadastrarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmPrincipal: TFrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmPrincipal.BtnCadastrarClick(Sender: TObject);
+begin
+  LblLocal.Caption := 'Cadastrar Clientes';
+  PgcPrincipal.ActivePageIndex := 3;
+end;
+
+procedure TFrmPrincipal.BtnClientesClick(Sender: TObject);
+begin
+  LblLocal.Caption := 'Clientes';
+  PgcPrincipal.ActivePageIndex := 1;
+end;
+
+procedure TFrmPrincipal.BtnHomeClick(Sender: TObject);
+begin
+  LblLocal.Caption := 'Home';
+  PgcPrincipal.ActivePageIndex := 0;
+end;
+
+procedure TFrmPrincipal.BtnOrdensClick(Sender: TObject);
+begin
+  LblLocal.Caption := 'Ordens';
+  PgcPrincipal.ActivePageIndex := 2;
+end;
+
+procedure TFrmPrincipal.BtnSairClick(Sender: TObject);
+begin
+  FrmPrincipal.Close;
+end;
+
+procedure TFrmPrincipal.FormCreate(Sender: TObject);
+begin
+  BtnHome.Click;
+end;
+
+end.

@@ -1,0 +1,37 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 393
+  Width = 457
+  object Conn: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\sidne\Documents\Embarcadero\Studio\Projects\os' +
+        'gestor\OS_GESTOR.FDB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'Protocol=TCPIP'
+      'Server=127.0.0.1'
+      'DriverID=FB')
+    Connected = True
+    LoginPrompt = False
+    Left = 88
+    Top = 160
+  end
+  object FDPhysFBDriverLink1: TFDPhysFBDriverLink
+    VendorLib = 'C:\Program Files (x86)\Firebird\Firebird_3_0\fbclient.dll'
+    Left = 200
+    Top = 160
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 328
+    Top = 160
+  end
+  object QryCliente: TFDQuery
+    Connection = Conn
+    SQL.Strings = (
+      'select * from clientes')
+    Left = 88
+    Top = 248
+  end
+end
